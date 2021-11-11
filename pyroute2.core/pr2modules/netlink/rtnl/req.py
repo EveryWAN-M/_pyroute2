@@ -222,6 +222,10 @@ class IPRouteRequest(IPRequest):
              'table': '10'}
 
             {'type': 'seg6local',
+             'action': 'End.DT6',
+             'vrftable': 10}
+
+            {'type': 'seg6local',
              'action': 'End.DT4',
              'vrftable': 10}
 
