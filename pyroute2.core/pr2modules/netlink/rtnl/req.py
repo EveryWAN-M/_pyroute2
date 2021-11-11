@@ -284,7 +284,9 @@ class IPRouteRequest(IPRequest):
                 nh4 = header['nh4']
             elif action == 'End.DT6':
                 # Retrieve table
-                table = header['table']
+                table = header.get('table', None)
+                # Retrieve vrftable
+                vrftable = header.get('vrftable', None)
             elif action == 'End.DT4':
                 # Retrieve vrftable
                 vrftable = header['vrftable']
@@ -504,6 +506,10 @@ class IPRouteRequest(IPRequest):
                 # 'encap': {'type': 'seg6local',
                 #           'action': 'End.DT6',
                 #           'table': '10'}
+                #
+                # 'encap': {'type': 'seg6local',
+                #           'action': 'End.DT6',
+                #           'vrftable': 10}
                 #
                 # 'encap': {'type': 'seg6local',
                 #           'action': 'End.DT4',
