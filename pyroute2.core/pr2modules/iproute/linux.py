@@ -1885,7 +1885,7 @@ class RTNL_API(object):
                      oif=idx,
                      encap={'type': 'seg6local',
                             'action': 'End.DT6',
-                            'table':'10'})
+                            'table': 10})
 
         Create SEG6LOCAL tunnel End.DT6 action in VRF mode (kernel >= 5.11)::
 
@@ -1919,7 +1919,7 @@ class RTNL_API(object):
                      oif=idx,
                      encap={'type': 'seg6local',
                             'action': 'End.DT4',
-                            'vrftable':10})
+                            'vrftable': 10})
 
         Create SEG6LOCAL tunnel End.DT46 action (kernel >= 5.14)::
 

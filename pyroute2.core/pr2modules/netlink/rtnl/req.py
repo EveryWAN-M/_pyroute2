@@ -219,7 +219,7 @@ class IPRouteRequest(IPRequest):
 
             {'type': 'seg6local',
              'action': 'End.DT6',
-             'table': '10'}
+             'table': 10}
 
             {'type': 'seg6local',
              'action': 'End.DT6',
@@ -509,7 +509,7 @@ class IPRouteRequest(IPRequest):
                 #
                 # 'encap': {'type': 'seg6local',
                 #           'action': 'End.DT6',
-                #           'table': '10'}
+                #           'table': 10}
                 #
                 # 'encap': {'type': 'seg6local',
                 #           'action': 'End.DT6',
