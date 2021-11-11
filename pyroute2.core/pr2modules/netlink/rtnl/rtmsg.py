@@ -530,6 +530,7 @@ class rtmsg_base(nlflags):
             SEG6_LOCAL_ACTION_END_AS = 13
             SEG6_LOCAL_ACTION_END_AM = 14
             SEG6_LOCAL_ACTION_END_BPF = 15
+            SEG6_LOCAL_ACTION_END_DT46 = 16
 
             actions = {'End': SEG6_LOCAL_ACTION_END,
                        'End.X': SEG6_LOCAL_ACTION_END_X,
@@ -545,7 +546,8 @@ class rtmsg_base(nlflags):
                        'End.S': SEG6_LOCAL_ACTION_END_S,
                        'End.AS': SEG6_LOCAL_ACTION_END_AS,
                        'End.AM': SEG6_LOCAL_ACTION_END_AM,
-                       'End.BPF': SEG6_LOCAL_ACTION_END_BPF}
+                       'End.BPF': SEG6_LOCAL_ACTION_END_BPF,
+                       'End.DT46': SEG6_LOCAL_ACTION_END_DT46}
 
             def encode(self):
                 # Get action type and convert string to value

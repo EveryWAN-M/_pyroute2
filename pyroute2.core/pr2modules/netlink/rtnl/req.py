@@ -284,6 +284,9 @@ class IPRouteRequest(IPRequest):
             elif action == 'End.DT4':
                 # Retrieve vrftable
                 vrftable = header['vrftable']
+            elif action == 'End.DT46':
+                # Retrieve vrftable
+                vrftable = header['vrftable']
             elif action == 'End.B6':
                 # Parse segs
                 segs = header['srh']['segs']
@@ -500,6 +503,10 @@ class IPRouteRequest(IPRequest):
                 #
                 # 'encap': {'type': 'seg6local',
                 #           'action': 'End.DT4',
+                #           'vrftable': 10}
+                #
+                # 'encap': {'type': 'seg6local',
+                #           'action': 'End.DT46',
                 #           'vrftable': 10}
                 #
                 # 'encap': {'type': 'seg6local',
