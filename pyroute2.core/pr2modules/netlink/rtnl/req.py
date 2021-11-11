@@ -222,6 +222,10 @@ class IPRouteRequest(IPRequest):
              'table': '10'}
 
             {'type': 'seg6local',
+             'action': 'End.DT4',
+             'vrftable': 10}
+
+            {'type': 'seg6local',
              'action': 'End.B6',
              'table': '10'
              'srh': {'segs': '2000::5,2000::6'}}
@@ -496,7 +500,7 @@ class IPRouteRequest(IPRequest):
                 #
                 # 'encap': {'type': 'seg6local',
                 #           'action': 'End.DT4',
-                #           'vrftable': '10'}
+                #           'vrftable': 10}
                 #
                 # 'encap': {'type': 'seg6local',
                 #           'action': 'End.DX6',
